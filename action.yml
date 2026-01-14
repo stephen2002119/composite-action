@@ -1,10 +1,10 @@
 name: 'Hello World'
 description: 'Greet someone'
 inputs:
-  who-to-greet:  # id of input
+  input-string:  # id of input
     description: 'Who to greet'
     required: true
-    default: 'World'
+    default: 'No input provided'
 outputs:
   random-number:
     description: "Random number"
@@ -32,5 +32,3 @@ runs:
     - name: Run ada_lovelace.sh
       run: ada_lovelace.sh
       shell: bash
-
-
