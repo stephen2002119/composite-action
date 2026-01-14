@@ -6,7 +6,16 @@ This repository includes a bash shell script that displays ASCII art of Ada Love
 
 ### Usage
 
+The script is executable. Simply run:
+
 ```bash
+./ada_lovelace.sh
+```
+
+If needed, make it executable first:
+
+```bash
+chmod +x ada_lovelace.sh
 ./ada_lovelace.sh
 ```
 
