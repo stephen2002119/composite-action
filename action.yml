@@ -13,10 +13,10 @@ runs:
   using: "composite"
   steps:
     - name: Set Greeting
-      run: echo "Hello $INPUT_WHO_TO_GREET."
+      run: echo "Hello $INPUT-STRING."
       shell: bash
       env:
-        INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
+        INPUT-STRING: ${{ inputs.input-string }}
 
     - name: Random Number Generator
       id: random-number-generator
