@@ -29,8 +29,8 @@ runs:
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
 
-    - name: Run goodbye.sh
-      run: goodbye.sh
+    - name: Run ada_lovelace.sh
+      run: ada_lovelace.sh
       shell: bash
 
 
