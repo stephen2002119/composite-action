@@ -7,7 +7,7 @@ inputs:
     default: 'No input provided'
 outputs:
   result:
-    description: "Generated stringr"
+    description: "Generated string"
     #value: ${{ steps.random-number-generator.outputs.random-number }}
 runs:
   using: "composite"
@@ -15,8 +15,8 @@ runs:
     - name: Set Greeting
       shell: bash
       env:
-        INPUT-STRING: ${{ inputs.input-string }}
-      run: echo $INPUT-STRING
+        INPUT_STRING: ${{ inputs.input-string }}
+      run: echo $INPUT_STRING
 
     - name: Random Number Generator
       id: random-number-generator
